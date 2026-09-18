@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 1 day1</title>
+
+    <title>MealMate | Student Meal Planner</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-   <p>hello world</p> 
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            🍱 <span>MealMate</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">🏠 Dashboard</a>
+            <a href="#">📅 Meal Planner</a>
+            <a href="#">🍳 Recipes</a>
+            <a href="#">🛒 Grocery List</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#">⚙️ Settings</a>
+        </div>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="topbar">
+
+            <div>
+                <h1>Good Morning, Unique 👋</h1>
+                <p>Plan your meals and make your week easier.</p>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">U</div>
+                <span>Unique</span>
+            </div>
+
+        </header>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon">🍽️</div>
+                <div>
+                    <h3 id="mealCount">0</h3>
+                    <p>Planned Meals</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div>
+                    <h3>7</h3>
+                    <p>Days Planned</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon">🛒</div>
+                <div>
+                    <h3 id="ingredientCount">0</h3>
+                    <p>Ingredients</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Weekly Planner -->
+        <section class="planner-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>This Week</h2>
+                    <p>Your weekly meal plan</p>
+                </div>
+
+                <button id="addMealBtn">+ Add Meal</button>
+            </div>
+
+
+            <div class="week-grid">
+
+                <div class="day-card">
+                    <h3>Monday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Tuesday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Wednesday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Thursday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Friday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Saturday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+                <div class="day-card">
+                    <h3>Sunday</h3>
+                    <div class="meal-placeholder">No meal planned</div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-grid">
+
+                <button class="quick-card">
+                    🍳
+                    <span>Add a Recipe</span>
+                </button>
+
+                <button class="quick-card">
+                    🛒
+                    <span>View Grocery List</span>
+                </button>
+
+                <button class="quick-card">
+                    🎲
+                    <span>What Should I Eat?</span>
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
